@@ -13,6 +13,14 @@ int main(){
 			break;
 		}
 	}
-	std::cout<<n-1-in<<std::endl;
+	int max=n-1-in;
+	for(int i=n-1;i>=0;i--){
+		if(c[i]!=c[0]){
+			in=i;
+			break;
+		}
+	}
+	max=max>in?max:in;
+	std::cout<<max<<std::endl;
 	return 0;
 }

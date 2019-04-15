@@ -55,6 +55,10 @@ int main(){
 				o[i]+=1;
 			else if(s[i]==')'&&c[i]==c[i-1])
 				c[i]+=1;
+			if(o[i]<c[i]){
+				flag=true;
+				break;
+			}
 			continue;
 		}
 		else{
